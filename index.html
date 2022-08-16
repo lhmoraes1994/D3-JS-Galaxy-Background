@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    body{
+        background-color:black;
+
+    } 
+
+    </style>
+</head>
+<body>
+    <div class="svg" id="svg">
+       
+
+    </div>
+</body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+
+
+ svg = d3.select("#svg").append("svg").attr("height", 1200).attr("width", 4000).attr('stroke', 'white').attr('stroke-width', 1);
+
+svg.attr('fill','red');
+
+
+
+
+
+var arr=[];
+
+
+for(let i=0;i<10000;i++){
+
+var rx= Math.floor(Math.random() * 2000);
+var ry= Math.floor(Math.random() * 1200);
+var size= Math.floor(Math.random() * 3)/10;
+arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
+
+
+
+}
+for(let i=0;i<5000;i++){
+
+var rx= Math.floor(Math.random() * 2000);
+var ry= Math.floor(Math.random() * 1200);
+var size= Math.floor(Math.random() * 5)/100;
+arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
+
+
+
+}
+for(let i=0;i<1000;i++){
+
+var rx= Math.floor(Math.random() * 2000);
+var ry= Math.floor(Math.random() * 1200);
+var size= Math.floor(Math.random() * 10)/10;
+arr.push(svg.append('circle').attr('r',size).attr('cx', rx).attr('cy', ry).attr('fill', 'white'));
+
+
+
+}
+
+
+
+</script>
+<script src="app.js"> </script>
+</html>
