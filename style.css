@@ -1,0 +1,29 @@
+.svg {
+ 
+    width: 10%;
+    height: 300px;
+    
+    background-color: green;
+    padding-top: 15px;
+
+ 
+    display: block;
+ position: sticky;
+    padding-left: 50px;
+   
+  
+
+   }
+
+   p{
+    font-size: 500%;
+text-align: center;
+color: white;
+text-shadow: wheat;
+font-family: "poppins-medium", sans-serif;
+line-height: 1.071;
+text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+   }
